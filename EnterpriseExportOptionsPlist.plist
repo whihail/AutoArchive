@@ -8,8 +8,8 @@
 	<string>enterprise</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>cn.com.crc.HuaRunTong</key>
-		<string>CRC HuaRunTong dis</string>
+		<key>#Bundle Identifier</key>
+		<string>#描述文件名</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>#打包证书名</string>

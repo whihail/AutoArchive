@@ -8,8 +8,8 @@
 	<string>app-store</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.crc.crt</key>
-		<string>HuaRunTongAppStore</string>
+		<key>#Bundle Identifier</key>
+		<string>#描述文件名</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>#打包证书名</string>
