@@ -38,19 +38,19 @@ http://localhost:8080
 
 新建一个 iOS 的项目来开始自动化构建。点击“新建”，输入 item 名称，选择“构建一个自由风格的软件项目”，然后点击“OK”。
 
-<br/><img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-1.png" width="680"><br/>
+<img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-1.png" width="720"><br/>
 
 
 填写项目以及关于项目的描述，然后勾选参数化构建过程（此功能由上述 [Git Parameter](https://wiki.jenkins.io/display/JENKINS/Git+Parameter+Plugin) 插件提供），填写相应描述，Parameter Type 选项支持通过 Branch 构建，Tag 构建， 此处选择 Branch or Tag 构建。
 
-![项目信息填写](./Images/attach-2.png)
+<img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-2.png" width="720"><br/>
 
 
 在源码管理项中分别 Repositories 的 git url 地址，Gredentials 此处使用的是 Username with password 方式，也可使用 SSH Username with private key 方式，Branch Specifier 填写 Git Parameter 插件填写的 branch 参数名。
 
 构建触发器指的是触发时机，一般在做持续集成时用到，如每次有新代码提交触发构建、定时间隔触发构建等，此处未使用到，固不做说明。
 
-![源码信息](./Images/attach-3.png)
+<img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-3.png" width="720"><br/>
 
 构建环境中选择 Color ANSI Console Output，ANSI color map 选择 xterm，此配置由[AnsiColor](https://wiki.jenkins.io/display/JENKINS/AnsiColor+Plugin) 插件支持，它可以使 Console Output 支持带颜色的文字输出。
 
@@ -58,12 +58,12 @@ http://localhost:8080
 
 继续增加构建步骤选择 Execute shell，通过获取项目的一些相关信息，进行打包、上传 FTP、蒲公英、TestFlag/AppStore 等操作。
 
-![构建环境](./Images/attach-4.png width="320")
-![构建步骤](./Images/attach-5.png width="320")
+<img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-4.png" width="720">
+<img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-5.png" width="720"><br/>
 
 iOS Job 的配置到此结束，保存配置，就可进行构建了，下图是构建成功后的部分 Console Output。以上用到的相关脚本代码将在接下来的文章中做详细说明。
 
-![iOS成功日志](./Images/attach-6.png)
+<img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-6.png" width="720"><br/>
 
 #### Android Job 自动构建设置
 
@@ -71,11 +71,11 @@ Android Job 的配置在构建之前和 iOS 都是一致的，只是构建部分
 
 继续增加构建步骤选择 Execute shell，通过获取项目的一些相关信息（此处 Android 项目相关信息在 version_config Json 文件中获取，在 Gradle Task 中每次对 version_Config 文件进行更改），将 APK 包上传 FTP、蒲公英 等操作。
 
-![安卓构建](./Images/attach-7.png)
+<img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-7.png" width="720"><br/>
 
 Android Job 的配置到此结束，保存配置，就可进行构建了，下图是构建成功后的部分 Console Output。以上用到的相关脚本代码将在接下来的文章中做详细说明。
 
-![安卓成功](./Images/attach-8.png)
+<img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-8.png" width="720"><br/>
 
 #### 项目展示
 
