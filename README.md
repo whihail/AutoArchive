@@ -58,8 +58,8 @@ http://localhost:8080
 
 继续增加构建步骤选择 Execute shell，通过获取项目的一些相关信息，进行打包、上传 FTP、蒲公英、TestFlag/AppStore 等操作。
 
-![构建环境](./Images/attach-4.png)
-![构建步骤](./Images/attach-5.png)
+![构建环境](./Images/attach-4.png width="320")
+![构建步骤](./Images/attach-5.png width="320")
 
 iOS Job 的配置到此结束，保存配置，就可进行构建了，下图是构建成功后的部分 Console Output。以上用到的相关脚本代码将在接下来的文章中做详细说明。
 
