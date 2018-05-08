@@ -38,7 +38,8 @@ http://localhost:8080
 
 新建一个 iOS 的项目来开始自动化构建。点击“新建”，输入 item 名称，选择“构建一个自由风格的软件项目”，然后点击“OK”。
 
-![新建项目](./Images/attach-1.png)
+<img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-1.png" width="500"><br/>
+![新建项目](./Images/attach-1.png>)
 
 
 填写项目以及关于项目的描述，然后勾选参数化构建过程（此功能由上述 [Git Parameter](https://wiki.jenkins.io/display/JENKINS/Git+Parameter+Plugin) 插件提供），填写相应描述，Parameter Type 选项支持通过 Branch 构建，Tag 构建， 此处选择 Branch or Tag 构建。
