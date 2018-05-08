@@ -81,6 +81,6 @@ Android Job 的配置到此结束，保存配置，就可进行构建了，下�
 
 下图是公司目前接入 Jenkins 自动构建的一些客户端项目。
 
-![项目信息填写](./Images/attach-9.png)
+<img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-9.png" width="720"><br/>
 
 [https://github.com/whihail/AutoArchive]:https://github.com/whihail/AutoArchive
