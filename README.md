@@ -52,7 +52,7 @@ http://localhost:8080
 
 <img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-3.png" width="720"><br/>
 
-构建环境中选择 Color ANSI Console Output，ANSI color map 选择 xterm，此配置由[AnsiColor](https://wiki.jenkins.io/display/JENKINS/AnsiColor+Plugin) 插件支持，它可以使 Console Output 支持带颜色的文字输出。
+构建环境勾选 Color ANSI Console Output，ANSI color map 选择 xterm，此配置由[AnsiColor](https://wiki.jenkins.io/display/JENKINS/AnsiColor+Plugin) 插件支持，它可以使 Console Output 支持带颜色的文字输出。
 
 构建中增加构建步骤选择 Execute shell，由于我们项目由多团队开发，使用 CocoaPods 进行集成后构建，所以在构建之前需要 update 各团队的最新代码。
 
