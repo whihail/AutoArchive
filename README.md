@@ -77,6 +77,24 @@ Android Job 的配置到此结束，保存配置，就可进行构建了，下�
 
 <img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-8.png" width="720"><br/>
 
+#### 给机器分配固定 IP 地址
+
+我们知道，在公司内网中，每台机器的 IP 都是随机分配，这就造成每次网络连接过后 IP 地址都有可能改变，也就是说当你把当前地址给别人时，也许明天就不能用啦，所以要想将系统能力开放和共享给内部所有人使用，就必须要有唯一不变的登录地址。
+
+向公司运维人员提供 Jenkins 部署的机器网卡信息，让他给你分配固定 IP，配置之后机器的 IP 地址就不会再变化了。如有必要，还可向公司申请分配域名，方便记忆和之后的机器升级维护。
+
+<img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-10.png" width="600"><br/>
+
+#### Jenkins 开机自启动
+
+Jenkins 服务通过上文方式启动以后，会一直在后台运行，但是有时也会有一些意外情况，比如说断电导致的物理机器关机。这个时候服务停了，所有人就都用不了了，这个时候你又得登录到机器上，手动启动Jenkins，这期间所有人都在等你。当然这个时候你在公司并且闲着还好，动手处理一下问题还是能解决，那如果你很忙、你请假了或你离职了，然后其它人就不会弄，这就会造成不必要的资源浪费。
+
+这个时候开机自启动会显得很有必要，将上述启动 Jenkins 的命令放到一个 Shell 文件中，如公司网络连接需要进行认证，配合使用的还有开机网络自动账号密码认证。
+
+将 HrtAutoArchiveStartUp.sh 和 autoConnet.sh 的默认打开程序设置成终端，点击 +设置+->+用户和组+->+登录项+，添加这两个 Shell 文件到登录项中。重启机器，会自动运行这两个 Shell 文件启动 Jenkins 以及 自动登录验证网络。
+
+<img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-11.png" width="600"><br/>
+
 #### 项目展示
 
 下图是公司目前接入 Jenkins 自动构建的一些客户端项目。

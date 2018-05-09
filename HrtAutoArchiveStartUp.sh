@@ -1,4 +1,4 @@
-java -jar /Users/chengjiaming/autoArchive/jenkins2.72/jenkins.war -httpPort=8080
+java -jar /Users/crnmacpro/autoArchive/jenkins2.72/jenkins.war -httpPort=8080
 
 
 

@@ -9,7 +9,7 @@ DIR_UD=$2
 FTP_PATH=$3
 
 echo "\n\n\033[32m +++++++++++++++++上传到FTP服务器++++++++++++++++++\033[0m\n\n\n"
-ftp -n 10.0.56.26 <<!
+ftp -n 10.0.36.46 <<!
 user Anonymous Anonymous
 binary
 mkdir "${DIR_UD}"
