@@ -11,6 +11,9 @@ function buildIpa() {  #构建企业包
     IPAPATH=$4
     IPANAME=$5
 
+    # 开始计时
+    SECONDS=0
+
     # 清理
     echo "\n\n\033[32m +++++++++++++++++清理中+++++++++++++++++\033[0m\n\n\n"
     xcodebuild -workspace "${WORK_SPACE}" -scheme "${TARGET_NAME}" -configuration 'Release' clean
@@ -22,6 +25,12 @@ function buildIpa() {  #构建企业包
     # 打包
     echo "\n\n\033[32m +++++++++++++++++打包中++++++++++++++++++\033[0m\n\n\n"
     xcodebuild  -exportArchive -archivePath "./build/${XCARCHIVE}" -exportPath "./build/${IPAPATH}" -exportOptionsPlist "./EnterpriseExportOptionsPlist.plist" -allowProvisioningUpdates
+
+    # 验证
+    if [ -f "./build/${IPAPATH}" ] ; then
+    echo "\n\n\033[32m +++++++++++++++++打包成功，用时 ${SECONDS}s ++++++++++++++++++\033[0m\n\n\n"
+    else
+    echo "\n\n\033[32m +++++++++++++++++打包失败++++++++++++++++++\033[0m\n\n\n"
 }
 
 buildIpa $1 $2 $3 $4 $5
