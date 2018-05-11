@@ -25,7 +25,7 @@ function buildIpa() {
 
     # 打包
     echo "\n\n\033[32m +++++++++++++++++打包中++++++++++++++++++\033[0m\n\n\n"
-    xcodebuild  -exportArchive -archivePath "./build/${XCARCHIVE}" -exportPath "./build/${IPAPATH}" -exportOptionsPlist "./AppStoreExportOptionsPlist.plist" -allowProvisioningUpdates
+    xcodebuild -exportArchive -archivePath "./build/${XCARCHIVE}" -exportPath "./build/${IPAPATH}" -exportOptionsPlist "./AppStoreExportOptionsPlist.plist" -allowProvisioningUpdates
 
     # 验证
     if [ -f "./build/${IPAPATH}" ] ; then
