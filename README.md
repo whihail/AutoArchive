@@ -33,6 +33,7 @@ http://localhost:8080
 - 在 Build History 里面显示链接二维码 （description setter plugin）
 - SSH 插件 (SSH Credentials Plugin)
 - SSH Slaves 插件（SSH Slaves）- 配置 Jenkins Slaves 时需要
+- Email 插件（Email Extension）
 
 #### iOS Job 自动构建设置
 
