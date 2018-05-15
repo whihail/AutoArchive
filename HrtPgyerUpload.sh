@@ -54,6 +54,22 @@ function pgyerUpload() {
         `echo "app名称:${appName}\r\napp version号:${appVersion}\r\napp build号:${appVersionNo}\r\n全部版本地址:${downloadUrl}\r\n当前版本地址: ${cruBuildUrl}\r\nFTP服务器地址: ${ftpPath}\r\n更新说明:\r\n${UPDATE_DESC} \r\n最新版本蒲公英二维码地址: ${appQRCodeURL}" | pbcopy`
         echo "\033[32m ---------------------蒲公英相关信息已复制--------------------\033[0m"
         echo "\n\n\n"
+
+        # 删除旧文件
+        if [ -f ~/jenkins_sh/propfile.txt ] ; then
+        rm ~/jenkins_sh/propfile.txt
+        fi
+
+        # 输出变量到文件，以便发送邮件时使用
+        echo "JOB_APP_NAME   =$appName\n"         > ~/jenkins_sh/propfile.txt
+        echo "JOB_APP_VERSION=$appVersion\n"      >> ~/jenkins_sh/propfile.txt
+        echo "JOB_PGY_VERSION=$appBuildVersion\n" >> ~/jenkins_sh/propfile.txt
+        echo "JOB_APP_BUILD  =$appVersionNo\n"    >> ~/jenkins_sh/propfile.txt
+        echo "JOB_ALL_URL    =$downloadUrl\n"     >> ~/jenkins_sh/propfile.txt
+        echo "JOB_CRU_URL    =$cruBuildUrl\n"     >> ~/jenkins_sh/propfile.txt
+        echo "JOB_FTP_PATH   =$ftpPath\n"         >> ~/jenkins_sh/propfile.txt
+        echo "JOB_QRCODE_URL =$appQRCodeURL"      >> ~/jenkins_sh/propfile.txt
+
     else
 
         echo "\n\n\n"
