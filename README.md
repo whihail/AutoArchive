@@ -4,7 +4,7 @@
 - 3、Jenkins 开机自启动 / 网络开机自动登录认证。
 - 4、使用脚本自动上传 iOS/Android 包到 FTP 服务器备份。
 - 5、使用脚本自动上传 iOS/Android 包到蒲公英应用管理平台。
-- 6、使用脚本将 AppStore 发布包自动上传到 testFlag/AppStore。
+- 6、使用脚本将 AppStore 发布包自动上传到 TestFlight/AppStore。
 - 7、Jenkins 邮件提醒。
 - 8、Jenkins 部署 MacOS Slave 实现各自动构建平台的统一，构建机器集群。
 > *注：本文的操作环境是 Mac Pro / MacOS 10.13.4 中进行。Jenkins 版本是 2.7.2，Xcode 版本是 9.3，Android Studio 版本是 3.0，Java 版本是 1.8.0_151。下文中所用到的所有 Shell 脚本文件我已上传到 Github：[https://github.com/whihail/AutoArchive]*
@@ -57,7 +57,7 @@ http://localhost:8080
 
 构建中增加构建步骤选择 Execute shell，由于我们项目由多团队开发，使用 CocoaPods 进行集成后构建，所以在构建之前需要 update 各团队的最新代码。
 
-继续增加构建步骤选择 Execute shell，通过获取项目的一些相关信息，进行打包、上传 FTP、蒲公英、TestFlag/AppStore 等操作。
+继续增加构建步骤选择 Execute shell，通过获取项目的一些相关信息，进行打包、上传 FTP、蒲公英、TestFlight/AppStore 等操作。
 
 <img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-4.png" width="720">
 <img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-5.png" width="720"><br/>
