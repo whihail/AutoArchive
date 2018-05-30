@@ -104,6 +104,6 @@ Jenkins 服务通过上文方式启动以后，会一直在后台运行，但是
 
 #### 其它问题
 
-以上是关于此项目的简介，想了解详情请查看项目 (WiKi)[https://github.com/whihail/AutoArchive/wiki]。
+以上是关于此项目的简介，想了解详情请查看项目 [WiKi](https://github.com/whihail/AutoArchive/wiki)。
 
 [https://github.com/whihail/AutoArchive]:https://github.com/whihail/AutoArchive
