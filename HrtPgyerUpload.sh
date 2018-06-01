@@ -20,8 +20,6 @@ function pgyerUpload() {
 
     if [[ ${code} == "0" ]]; then
 
-        echo res:${res}
-        echo code:${code}
         local appName=$(echo `echo ${res}| jq .data.appName` | sed 's/\"//g')
         local appVersion=$(echo `echo ${res}| jq .data.appVersion` | sed 's/\"//g')
         local appVersionNo=$(echo `echo ${res}| jq .data.appVersionNo` | sed 's/\"//g')
