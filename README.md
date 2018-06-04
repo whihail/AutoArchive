@@ -92,7 +92,7 @@ Jenkins 服务通过上文方式启动以后，会一直在后台运行，但是
 
 这个时候开机自启动会显得很有必要，将上述启动 Jenkins 的命令放到一个 Shell 文件中，如公司网络连接需要进行认证，配合使用的还有开机网络自动账号密码认证。
 
-将 [HrtAutoArchiveStartUp.sh](https://github.com/whihail/AutoArchive/blob/master/HrtAutoArchiveStartUp.sh) 和 [autoConnet.sh](https://github.com/whihail/AutoArchive/blob/master/autoConnet.sh) 的默认打开程序设置成终端，点击 +设置+->+用户和组+->+登录项+，添加这两个 Shell 文件到登录项中。重启机器，会自动运行这两个 Shell 文件启动 Jenkins 以及 自动登录验证网络。
+将 [HrtAutoArchiveStartUp.sh](https://github.com/whihail/AutoArchive/blob/master/HrtAutoArchiveStartUp.sh) 和 [autoConnect.sh](https://github.com/whihail/AutoArchive/blob/master/autoConnect.sh) 的默认打开程序设置成终端，点击 +设置+->+用户和组+->+登录项+，添加这两个 Shell 文件到登录项中。重启机器，会自动运行这两个 Shell 文件启动 Jenkins 以及 自动登录验证网络。
 
 <img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-11.png" width="600"><br/>
 
