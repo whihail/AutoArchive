@@ -105,6 +105,7 @@ Jenkins 服务通过上文方式启动以后，会一直在后台运行，但是
 #### 其它问题
 
 以上是关于此项目的简介，想了解更多详情请查看该项目 [WiKi](https://github.com/whihail/AutoArchive/wiki)。
+
 [客户端Jenkins自动构建指南之应用构建](https://github.com/whihail/AutoArchive/wiki/客户端Jenkins自动构建指南之应用构建)  
 [客户端Jenkins自动构建指南之应用上传](https://github.com/whihail/AutoArchive/wiki/客户端Jenkins自动构建指南之应用上传)  
 [客户端Jenkins自动构建指南之邮件通知](https://github.com/whihail/AutoArchive/wiki/客户端Jenkins自动构建指南之邮件通知)  
