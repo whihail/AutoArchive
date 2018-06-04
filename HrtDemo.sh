@@ -1,4 +1,3 @@
-# 说明：以下代码用到的项目名，账号，地址等信息均已经过修改。
 # 工程名
 APP_NAME="demo"
 # target名
@@ -30,6 +29,7 @@ DIR_UD="pub/iOS/Demo/Enterprise/V${bundleShortVersion}"
 # FTP包地址
 FTP_PATH="ftp://10.0.54.27/${DIR_UD}/${IPANAME}"
 
+# 说明：以上变量信息均为demo项目信息，大家在使用时需根据自己项目的实际情况进行修改。
 
 # 打包
 ~/jenkins_sh/HrtBuildIpa.sh "${WORK_SPACE}" "${TARGET_NAME}" "${XCARCHIVE}" "${IPAPATH}" "${IPANAME}"
