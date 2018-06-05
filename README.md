@@ -65,7 +65,7 @@ http://localhost:8080
 
 构建中增加构建步骤选择 Execute shell，由于我们项目由多团队开发，使用 CocoaPods 进行集成后构建，所以在构建之前需要 update 各团队的最新代码。
 
-继续增加构建步骤选择 Execute shell，通过获取项目的一些相关信息，进行打包、上传 FTP、蒲公英、TestFlight/AppStore 等操作，相关示例代码 [HrtDemo.sh](https://github.com/whihail/AutoArchive/blob/master/HrtDemo.sh)。
+继续增加构建步骤选择 Execute shell，通过获取项目的一些相关信息，进行打包、上传 FTP、蒲公英、TestFlight/AppStore 等操作，相关示例代码 [HrtDemo.sh](https://github.com/whihail/AutoArchive/blob/master/HrtiOSDemo.sh)。
 
 <img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-4.png" width="720">
 <img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-5.png" width="720"><br/>
