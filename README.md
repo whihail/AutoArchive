@@ -119,5 +119,6 @@ Jenkins 服务通过上文方式启动以后，会一直在后台运行，但是
 [客户端Jenkins自动构建指南之邮件通知](https://github.com/whihail/AutoArchive/wiki/客户端Jenkins自动构建指南之邮件通知)  
 [客户端Jenkins自动构建指南之分布式应用](https://github.com/whihail/AutoArchive/wiki/客户端Jenkins自动构建指南之分布式应用)  
 [客户端Jenkins自动构建指南之项目模块化](https://github.com/whihail/AutoArchive/wiki/客户端Jenkins自动构建指南之项目模块化)
+[客户端Jenkins自动构建指南之常见问题解答](https://github.com/whihail/AutoArchive/wiki/客户端Jenkins自动构建指南之常见问题解答)
 
 [https://github.com/whihail/AutoArchive]:https://github.com/whihail/AutoArchive
