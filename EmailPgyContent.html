@@ -1,0 +1,36 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <meta charset="UTF-8">  
+  <title>${ENV, var="JOB_NAME"}-第${BUILD_NUMBER}次构建日志</title>  
+</head>  
+
+<body leftmargin="8" marginwidth="0" topmargin="8" marginheight="4"  
+offset="0">  
+<table width="95%" cellpadding="0" cellspacing="0"  
+style="font-size: 11pt; font-family: Tahoma, Arial, Helvetica, sans-serif">  
+<tr>  
+  <td><br />  
+    <b><font color="#0B610B">项目信息</font></b>  
+    <hr size="2" width="100%" align="center" />
+  </td>  
+</tr>  
+<tr>  
+  <td>  
+    <ul>  
+      <li>APP名称 ：${JOB_APP_NAME}</li> 
+      <li>APP版本 ：${JOB_APP_VERSION}（build${JOB_APP_BUILD}）</li> 
+      <li>蒲公英号 ：${JOB_PGY_VERSION}</li> 
+      <li>全部版本 ：${JOB_ALL_URL}</li> 
+      <li>当前版本 ：${JOB_CRU_URL}</li> 
+      <li>FTP地址 ：${JOB_FTP_PATH}</li>
+      <li>更新说明 ：${PackageResume}</li>
+      <li>                <img src="${JOB_QRCODE_URL}" /></li>
+    </ul>  
+  </td>  
+</tr>  
+</table>  
+
+</body>  
+</html>  
+$PROJECT_DEFAULT_CONTENT

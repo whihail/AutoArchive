@@ -1,0 +1,32 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <meta charset="UTF-8">  
+  <title>${ENV, var="JOB_NAME"}-第${BUILD_NUMBER}次构建日志</title>  
+</head>  
+
+<body leftmargin="8" marginwidth="0" topmargin="8" marginheight="4"  
+offset="0">  
+<table width="95%" cellpadding="0" cellspacing="0"  
+style="font-size: 11pt; font-family: Tahoma, Arial, Helvetica, sans-serif">  
+<tr>  
+  <td><br />  
+    <b><font color="#0B610B">项目信息</font></b>  
+    <hr size="2" width="100%" align="center" />
+  </td>  
+</tr>  
+<tr>  
+  <td>  
+    <ul>  
+      <li>APP名称 ：${JOB_APP_NAME}</li> 
+      <li>APP版本 ：${JOB_APP_VERSION}（build${JOB_APP_BUILD}）</li> 
+      <li>FTP地址 ：${JOB_FTP_PATH}</li>
+      <li>上传情况 :  生产包已上传到 TestFlight / AppStore。待 Apple 服务器处理好（大概30分钟）后可通过 TestFlight 下载安装进行最后的验证，负责发布的同学可登陆 iTunes Connect 提交审核。</li>
+    </ul>  
+  </td>  
+</tr>  
+</table>  
+
+</body>  
+</html>  
+$PROJECT_DEFAULT_CONTENT
