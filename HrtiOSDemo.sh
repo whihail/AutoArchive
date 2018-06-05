@@ -43,4 +43,5 @@ mv "${TARGET_NAME}.ipa" "${IPANAME}"
 
 # 上传到蒲公英
 ~/jenkins_sh/HrtPgyerUpload.sh "${IPANAME}" "${FTP_PATH}" "${USER_KEY}" "${API_KEY}" "${PackageResume}"
-
+# 上传AppStore 如是上传AppStore请打开下面代码，并注释上传蒲公英代码
+# ~/jenkins_sh/HrtAppStoreUpload.sh "${IPANAME}" "华润通" "${bundleShortVersion}" "${bundleVersion}" "${FTP_PATH}"
