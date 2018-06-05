@@ -78,7 +78,7 @@ iOS Job 的配置到此结束，保存配置，就可进行构建了，下图是
 
 Android Job 的配置在构建之前和 iOS 都是一致的，只是构建部分有所区别，此处我们使用上文提到的 [Gradle plugin](https://wiki.jenkins.io/display/JENKINS/Gradle+Plugin) 插件对项目进行构建，添加构建步骤 Invoke Gradle script，选中 Invoke Gradle，Gradle Version 选择 Default，Tasks 填写你需要构建的 Gradle Task。
 
-继续增加构建步骤选择 Execute shell，通过获取项目的一些相关信息（此处 Android 项目相关信息在 version_config Json 文件中获取，在 Gradle Task 中每次对 version_Config 文件进行更改），将 APK 包上传 FTP、蒲公英 等操作。
+继续增加构建步骤选择 Execute shell，通过获取项目的一些相关信息（此处 Android 项目相关信息在 version_config Json 文件中获取，在 Gradle Task 中每次对 version_Config 文件进行更改），将 APK 包上传 FTP、蒲公英 等操作，相关示例代码 [HrtAndroidDemo.sh](https://github.com/whihail/AutoArchive/blob/master/HrtAndroidDemo.sh)。
 
 <img src="https://github.com/whihail/AutoArchive/blob/master/Images/attach-7.png" width="720"><br/>
 
