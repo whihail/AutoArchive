@@ -122,7 +122,7 @@ Jenkins 服务通过上文方式启动以后，会一直在后台运行，但是
 [客户端Jenkins自动构建指南之常见问题解答](https://github.com/whihail/AutoArchive/wiki/客户端Jenkins自动构建指南之常见问题解答)
 
 #### 联系我们
-QQ交流群：716728133
+QQ交流群：716728133   
 <img src="https://github.com/whihail/AutoArchive/blob/master/Images/jenkins.png" width="240"><br/>
 
 [https://github.com/whihail/AutoArchive]:https://github.com/whihail/AutoArchive
