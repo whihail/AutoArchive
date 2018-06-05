@@ -27,7 +27,7 @@ function buildIpa() {  #构建企业包
     xcodebuild -exportArchive -archivePath "./build/${XCARCHIVE}" -exportPath "./build/${IPAPATH}" -exportOptionsPlist "./EnterpriseExportOptionsPlist.plist" -allowProvisioningUpdates
 
     # 验证
-    if [ -f "./build/${IPAPATH}" ] ; then
+    if [ -f "./build/${IPAPATH}/${TARGET_NAME}.ipa" ] ; then
     echo "\n\n\033[32m +++++++++++++++++打包成功，用时 ${SECONDS}s ++++++++++++++++++\033[0m\n\n\n"
     else
     echo "\n\n\033[32m +++++++++++++++++打包失败++++++++++++++++++\033[0m\n\n\n"
